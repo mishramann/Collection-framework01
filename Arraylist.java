@@ -35,15 +35,30 @@ public class Arraylist {
 
     // }
 
-    List<String> list = new ArrayList<>();
-    System.out.println(list.getClass().getName());
-    List<String> list1 = Arrays.asList("apple", "mango", "banana");
-    System.out.println(list1.getClass().getName());
-    list1.set(1, "kiwi");
-    System.out.println(list1.get(1));
-    String[] array = { "Apple", "Banana", "Cherry" };
-    List<String> list2 = Arrays.asList(array);
-    System.out.println(list2.getClass().getName());
+    // List<String> list = new ArrayList<>();
+    // System.out.println(list.getClass().getName());
+    // List<String> list1 = Arrays.asList("apple", "mango", "banana");
+    // System.out.println(list1.getClass().getName());
+    // list1.set(1, "kiwi");
+    // System.out.println(list1.get(1));
+    // String[] array = { "Apple", "Banana", "Cherry" };
+    // List<String> list2 = Arrays.asList(array);
+    // System.out.println(list2.getClass().getName());
+
+    // // List<Integer> list3 = List.of(1, 2, 3, 4);
+    // // list3.set(3, 10);
+    // List<String> list4 = new ArrayList<>(list2);
+    // list4.add("Mango");
+    // System.out.println(list4);
+    List<Integer> list = new ArrayList<>();
+    list.add(1);
+    list.add(2);
+    list.add(3);
+    list.add(0, 0);
+    // System.out.println(list);
+    List<Integer> list1 = List.of(4, 5, 6, 7, 8, 9);
+    list.addAll(list1);
+    System.out.println(list);
 
   }
 }
