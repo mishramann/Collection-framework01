@@ -30,6 +30,7 @@ public class Arraylist {
     for (int x : list) {
       System.out.println(x); // if we intitialize an arraylist with the capacity of 12 element then if
                              // inceases size of that arraylist it will increase 1.5 times of that arraylist
+
     }
 
   }
