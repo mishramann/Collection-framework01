@@ -1,4 +1,7 @@
+import java.lang.classfile.components.ClassPrinter.Node;
 import java.util.*;
+
+import org.w3c.dom.NodeList;
 
 public class Arraylist {
   public static void main(String[] args) {
@@ -50,15 +53,59 @@ public class Arraylist {
     // List<String> list4 = new ArrayList<>(list2);
     // list4.add("Mango");
     // System.out.println(list4);
-    List<Integer> list = new ArrayList<>();
-    list.add(1);
-    list.add(2);
-    list.add(3);
-    list.add(0, 0);
+    // List<Integer> list = new ArrayList<>();
+    // list.add(1);
+    // list.add(2);
+    // list.add(3);
+    // list.add(0, 0);
+    // // System.out.println(list);
+    // List<Integer> list1 = List.of(4, 5, 6, 7, 8, 9);
+    // list.addAll(list1);
     // System.out.println(list);
-    List<Integer> list1 = List.of(4, 5, 6, 7, 8, 9);
-    list.addAll(list1);
-    System.out.println(list);
+    // List<Integer> list = new ArrayList<>();
+    // list.add(1); // 0
+    // list.add(5); // 1
+    // list.add(3); // 2
+    // list.remove(1); // by index remove 2
+    // list.remove(Integer.valueOf(1)); // it will remove the value 1 and hide the
+    // index
+    // System.out.println(list);
+    // Object[] array = list.toArray();
+    // Integer[] array2 = list.toArray(new Integer[0]); // converting list to array
+    // Collections.sort(list); // Modification occur or we can say it will change in
+    // ascending order
+    // list.sort(null);
+    // Time-Complexity
+    // Access by index (get)) is O(n).
+    // Adding an element is O(n) in the worst case when resizing occurs.
+    // Removing elements can be O(n) beacause it may involve shifting elements.
+    // Iteration is O(n).
+    // System.out.println(list);
+    // comparator method
+
+    // LinkedList
+    // linkedlist class in java is a part of collection framework and implements the
+    // List interface. Unlike an ArrayList which uses the dynamic array to store the
+    // element, a Linkedlist stores its elements as nodes in doubly Linked list.
+    // This provide a different performance characterstics and usage scenerios
+    // compared to Arraylist.
+
+    LinkedList<Integer> linkedList = new LinkedList<>();
+    linkedList.add(1);
+    linkedList.add(2);
+    linkedList.add(3);
+    // A Linkedlist is a Linear data structure where each element is a seperate
+    // object called a node. Each node contain two parts:
+    // Data : The value stored in the node ;
+    // Pointer: Two pointers, one pointing to the next node (next) and the other
+    // pointing to the prexious node (previous).
 
   }
+}
+
+class Node {
+
+  public int value;
+  public Node next;
+
 }
